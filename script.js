@@ -241,22 +241,22 @@ document.addEventListener('DOMContentLoaded', function () {
             let isValid = true;
 
             // Get form values
-            const name = document.getElementById('res-name').value.trim();
-            const phone = document.getElementById('res-phone').value.trim();
-            const date = document.getElementById('res-date').value;
-            const time = document.getElementById('res-time').value;
-            const guests = document.getElementById('res-guests').value;
-            const message = document.getElementById('res-message') ? document.getElementById('res-message').value.trim() : '';
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const guests = document.getElementById('guests').value;
+            const message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
 
             // Validate name (at least 2 characters, only letters and spaces)
             if (name === '') {
-                showError('res-name', 'name-error', 'Please enter your name');
+                showError('name', 'name-error', 'Please enter your name');
                 isValid = false;
             } else if (name.length < 2) {
-                showError('res-name', 'name-error', 'Name must be at least 2 characters');
+                showError('name', 'name-error', 'Name must be at least 2 characters');
                 isValid = false;
             } else if (!/^[a-zA-Z\s]+$/.test(name)) {
-                showError('res-name', 'name-error', 'Name can only contain letters and spaces');
+                showError('name', 'name-error', 'Name can only contain letters and spaces');
                 isValid = false;
             }
 
@@ -265,10 +265,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const cleanPhone = phone.replace(/[\s\-\+]/g, '');
 
             if (phone === '') {
-                showError('res-phone', 'phone-error', 'Please enter your phone number');
+                showError('phone', 'phone-error', 'Please enter your phone number');
                 isValid = false;
             } else if (!phoneRegex.test(phone) && cleanPhone.length < 10) {
-                showError('res-phone', 'phone-error', 'Please enter a valid Indian phone number');
+                showError('phone', 'phone-error', 'Please enter a valid Indian phone number');
                 isValid = false;
             }
 
@@ -278,16 +278,16 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedDate = new Date(date);
 
             if (date === '') {
-                showError('res-date', 'date-error', 'Please select a date');
+                showError('date', 'date-error', 'Please select a date');
                 isValid = false;
             } else if (selectedDate < today) {
-                showError('res-date', 'date-error', 'Please select a future date');
+                showError('date', 'date-error', 'Please select a future date');
                 isValid = false;
             }
 
             // Validate time
             if (time === '') {
-                showError('res-time', 'time-error', 'Please select a time');
+                showError('time', 'time-error', 'Please select a time');
                 isValid = false;
             } else {
                 // Check if time is within restaurant hours (11:00 - 23:00)
@@ -297,14 +297,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 const closeTime = 23 * 60; // 11:00 PM
 
                 if (selectedTime < openTime || selectedTime > closeTime) {
-                    showError('res-time', 'time-error', 'Please select a time between 11:00 AM and 11:00 PM');
+                    showError('time', 'time-error', 'Please select a time between 11:00 AM and 11:00 PM');
                     isValid = false;
                 }
             }
 
             // Validate guests
             if (guests === '') {
-                showError('res-guests', 'guests-error', 'Please select number of guests');
+                showError('guests', 'guests-error', 'Please select number of guests');
                 isValid = false;
             }
 
@@ -718,7 +718,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set minimum date for reservation
     // ===========================
 
-    const dateInput = document.getElementById('res-date');
+    const dateInput = document.getElementById('date');
     if (dateInput) {
         const today = new Date();
         const tomorrow = new Date(today);
