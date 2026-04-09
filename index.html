@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUZU zone-fs - VIT AP University Food Street</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo with VIT AP and ZUZU -->
+            <div class="logo">
+                <div class="vit-logo-container">
+                    <img src="1771005840588_image.png" alt="VIT AP" class="vit-logo">
+                </div>
+                <div class="logo-symbol">
+                    <span class="zuzu-text">ZUZU</span>
+                </div>
+                <div class="logo-text">
+                    <span class="royal">ZUZU</span>
+                    <span class="restaurant">zone-fs</span>
+                </div>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#reservation" class="nav-link">Reservation</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to</span>
+                    <span class="title-line luxury">ZUZU zone-fs</span>
+                    <span class="title-line">VIT AP Food Street</span>
+                </h1>
+                <p class="hero-subtitle">Where Campus Dining Meets Culinary Excellence</p>
+                <div class="hero-buttons">
+                    <a href="#reservation" class="btn btn-primary">Reserve Your Table</a>
+                    <a href="#menu" class="btn btn-secondary">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Authentic South Indian Cuisine</span>
+                <h2 class="section-title">Our Signature Menu</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="breakfast">Breakfast</button>
+                <button class="category-btn" data-category="mains">Main Course</button>
+                <button class="category-btn" data-category="biryani">Biryani</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="beverages">Beverages</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Breakfast Items -->
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="masala-dosa.png" alt="Masala Dosa">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Masala Dosa</h3>
+                        <p class="menu-item-desc">Crispy rice crepe filled with spiced potato masala, served with sambar & chutneys</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹120</span>
+                            <span class="menu-category-tag">Breakfast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="idli-vada.png" alt="Idli Vada">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Idli Vada Combo</h3>
+                        <p class="menu-item-desc">Steamed rice cakes & crispy lentil donuts with sambar and coconut chutney</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹80</span>
+                            <span class="menu-category-tag">Breakfast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="breakfast">
+                    <div class="menu-card-image">
+                        <img src="ghee-pongal.png" alt="Pongal">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Ghee Pongal</h3>
+                        <p class="menu-item-desc">Traditional rice & lentil dish tempered with ghee, cashews, and black pepper</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹100</span>
+                            <span class="menu-category-tag">Breakfast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-image">
+                        <img src="andhra-meals.png" alt="Andhra Meals">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Andhra Meals</h3>
+                        <p class="menu-item-desc">Traditional South Indian thali with rice, sambar, rasam, curries & sweets</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹250</span>
+                            <span class="menu-category-tag">Main Course</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-image">
+                        <img src="pulihora.png" alt="Pulihora">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Pulihora</h3>
+                        <p class="menu-item-desc">Tangy tamarind rice with peanuts, curry leaves, and aromatic spices</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹150</span>
+                            <span class="menu-category-tag">Main Course</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="mains">
+                    <div class="menu-card-image">
+                        <img src="gongura.png" alt="Gongura Chicken">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Gongura Chicken</h3>
+                        <p class="menu-item-desc">Andhra's famous tangy chicken curry with red sorrel leaves</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹280</span>
+                            <span class="menu-category-tag">Main Course</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biryani -->
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-image">
+                        <img src="biriyani.png" alt="Hyderabadi Biryani">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Hyderabadi Chicken Biryani</h3>
+                        <p class="menu-item-desc">Fragrant basmati rice layered with tender chicken, saffron & spices</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹300</span>
+                            <span class="menu-category-tag">Biryani</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-image">
+                        <img src="mutton.png" alt="Mutton Biryani">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Mutton Biryani</h3>
+                        <p class="menu-item-desc">Slow-cooked mutton with aromatic rice, garnished with fried onions</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹350</span>
+                            <span class="menu-category-tag">Biryani</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="biryani">
+                    <div class="menu-card-image">
+                        <img src="veg.png" alt="Veg Biryani">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Vegetable Biryani</h3>
+                        <p class="menu-item-desc">Mixed vegetables and paneer cooked with aromatic spices & basmati rice</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹220</span>
+                            <span class="menu-category-tag">Biryani</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="gulab.png" alt="Gulab Jamun">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Gulab Jamun</h3>
+                        <p class="menu-item-desc">Soft milk-solid dumplings soaked in rose-flavored sugar syrup</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹80</span>
+                            <span class="menu-category-tag">Desserts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="payasam.png" alt="Payasam">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Payasam</h3>
+                        <p class="menu-item-desc">Creamy rice pudding with milk, cardamom, cashews & raisins</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹100</span>
+                            <span class="menu-category-tag">Desserts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image">
+                        <img src="meetha.png" alt="Qubani Ka Meetha">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Qubani Ka Meetha</h3>
+                        <p class="menu-item-desc">Hyderabadi apricot dessert garnished with almonds and cream</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹120</span>
+                            <span class="menu-category-tag">Desserts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-image">
+                        <img src="coffe.png" alt="Filter Coffee">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Filter Coffee</h3>
+                        <p class="menu-item-desc">Traditional South Indian filter coffee with frothy milk</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹40</span>
+                            <span class="menu-category-tag">Beverages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-image">
+                        <img src="buttermilk.png" alt="Buttermilk">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Masala Chaas</h3>
+                        <p class="menu-item-desc">Refreshing spiced buttermilk with curry leaves and ginger</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹30</span>
+                            <span class="menu-category-tag">Beverages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="beverages">
+                    <div class="menu-card-image">
+                        <img src="lime.png" alt="Fresh Lime Soda">
+                        <div class="menu-overlay">
+                            <span class="menu-icon"><i class="fas fa-utensils"></i></span>
+                        </div>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-item-name">Fresh Lime Soda</h3>
+                        <p class="menu-item-desc">Tangy fresh lime with soda water, sweet or salted</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-price">₹35</span>
+                            <span class="menu-category-tag">Beverages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-cta">
+                <p>Can't find your favorite dish?</p>
+                <button class="btn btn-primary" id="suggestDishBtn">Suggest a Dish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Book Your Experience</span>
+                <h2 class="section-title">Reserve a Table</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="reservation-content">
+                <div class="reservation-info">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p><strong>Monday - Friday</strong></p>
+                        <p>7:00 AM - 10:00 PM</p>
+                        <p><strong>Saturday - Sunday</strong></p>
+                        <p>7:00 AM - 11:00 PM</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>ZUZU zone-fs</p>
+                        <p>VIT AP University</p>
+                        <p>Amaravati, Andhra Pradesh</p>
+                        <p>India - 522237</p>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Contact</h3>
+                        <p><strong>Phone:</strong> +91 9985934492</p>
+                        <p><strong>Email:</strong> zuzu@vitap.ac.in</p>
+                        <p><strong>WhatsApp:</strong> Available</p>
+                    </div>
+                </div>
+
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select...</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8+ Guests</option>
+                            </select>
+                            <span class="error-message" id="guests-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Reservation Date *</label>
+                            <input type="date" id="date" name="date" required>
+                            <span class="error-message" id="date-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Preferred Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select...</option>
+                                <option value="07:00">7:00 AM</option>
+                                <option value="08:00">8:00 AM</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                            <span class="error-message" id="time-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests (Optional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Birthday celebration, dietary restrictions, seating preferences, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Confirm Reservation</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Journey</span>
+                <h2 class="section-title">Our Gallery</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="food">
+                    <img src="biriyani.png" alt="Biryani Platter">
+                    <div class="gallery-overlay">
+                        <h3>Hyderabadi Biryani</h3>
+                        <p>Signature Dish</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <h3>Modern Ambiance</h3>
+                        <p>Dining Area</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="masala-dosa.png" alt="Dosa">
+                    <div class="gallery-overlay">
+                        <h3>Crispy Dosa</h3>
+                        <p>Breakfast Special</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="andhra-meals.png" alt="Thali">
+                    <div class="gallery-overlay">
+                        <h3>Full Thali</h3>
+                        <p>Complete Meal</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800" alt="Seating Area">
+                    <div class="gallery-overlay">
+                        <h3>Comfortable Seating</h3>
+                        <p>Campus Vibe</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800" alt="Desserts">
+                    <div class="gallery-overlay">
+                        <h3>Sweet Treats</h3>
+                        <p>Traditional Desserts</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800" alt="Restaurant Team">
+                    <div class="about-overlay"></div>
+                </div>
+
+                <div class="about-text">
+                    <div class="section-header">
+                        <span class="section-subtitle">Our Story</span>
+                        <h2 class="section-title">About ZUZU zone-fs</h2>
+                        <div class="title-ornament"></div>
+                    </div>
+
+                    <p class="about-description">
+                        Welcome to ZUZU zone-fs, the premier dining destination at VIT AP University's Food Street. 
+                        We bring authentic South Indian flavors to the campus community, combining traditional recipes 
+                        with modern culinary techniques.
+                    </p>
+
+                    <p class="about-description">
+                        Our mission is to provide students, faculty, and visitors with a memorable dining experience 
+                        that celebrates the rich culinary heritage of Andhra Pradesh and South India. Every dish is 
+                        prepared with fresh ingredients and served with warmth and hospitality.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Authentic Flavors</h4>
+                            <p>Traditional South Indian recipes</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Ingredients</h4>
+                            <p>Quality sourced daily</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>Made with Love</h4>
+                            <p>Passionate about food</p>
+                        </div>
+
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>Quick Service</h4>
+                            <p>Perfect for campus life</p>
+                        </div>
+                    </div>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>500+</h3>
+                            <p>Happy Students Daily</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Menu Items</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>4.8</h3>
+                            <p>Average Rating</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>2+</h3>
+                            <p>Years of Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>ZUZU zone-fs<br>
+                        VIT AP University<br>
+                        Amaravati, Andhra Pradesh<br>
+                        India - 522237</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p><strong>Phone:</strong><br>+91 9985934492</p>
+                        <p><strong>WhatsApp:</strong><br>Available 24/7</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p><strong>General:</strong><br>zuzu@vitap.ac.in</p>
+                        <p><strong>Feedback:</strong><br>feedback@zuzu.vitap.in</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Working Hours</h3>
+                        <p><strong>Mon - Fri:</strong><br>7:00 AM - 10:00 PM</p>
+                        <p><strong>Sat - Sun:</strong><br>7:00 AM - 11:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contact-name">Your Name *</label>
+                                <input type="text" id="contact-name" name="name" required>
+                                <span class="error-message" id="contact-name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" required>
+                                <span class="error-message" id="contact-email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone" placeholder="+91 9876543210">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" required>
+                                <span class="error-message" id="contact-subject-error"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="contact-message">Message *</label>
+                                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                                <span class="error-message" id="contact-message-error"></span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <!-- Google Map - VIT AP University -->
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.0757977586187!2d80.62144657486858!3d16.394458184283834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a755cb1787785%3A0x9f7999dd90f1e694!2sVIT-AP%20University!5e0!3m2!1sen!2sin!4v1706000000000!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="vit-logo-container-footer">
+                            <img src="1771005840588_image.png" alt="VIT AP" class="vit-logo-footer">
+                        </div>
+                        <div class="logo-symbol">
+                            <span class="zuzu-text">ZUZU</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="royal">ZUZU</span>
+                            <span class="restaurant">zone-fs</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Experience authentic South Indian cuisine at VIT AP University's premier 
+                        food destination. Every visit is a celebration of flavors!
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Private Events</a></li>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">Campus Delivery</a></li>
+                        <li><a href="#">Student Offers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-newsletter">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +91 9985934492</p>
+                        <p><i class="fas fa-envelope"></i> zuzu@vitap.ac.in</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZUZU zone-fs @ VIT AP University. All Rights Reserved. Designed by <strong>Inukonda Jyoshna</strong></p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="terms-of-service.html" target="_blank">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Suggest Dish Modal -->
+    <div class="modal" id="suggestDishModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSuggestModal">&times;</span>
+            <h2>Suggest a Dish</h2>
+            <p>Tell us about your favorite South Indian dish!</p>
+            <form id="suggestDishForm">
+                <div class="form-group">
+                    <label for="suggest-name">Your Name *</label>
+                    <input type="text" id="suggest-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggest-email">Email *</label>
+                    <input type="email" id="suggest-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggest-dish-name">Dish Name *</label>
+                    <input type="text" id="suggest-dish-name" placeholder="e.g., Pesarattu Dosa" required>
+                </div>
+                <div class="form-group">
+                    <label for="suggest-dish-description">Description</label>
+                    <textarea id="suggest-dish-description" rows="4" placeholder="Tell us about this dish..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Suggestion</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/neo4j-driver@5.26.0/lib/browser/neo4j-web.min.js"></script>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
