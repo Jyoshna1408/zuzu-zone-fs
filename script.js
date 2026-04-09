@@ -240,13 +240,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             let isValid = true;
 
-            // Get form values
-            const name = document.getElementById('name').value.trim();
-            const phone = document.getElementById('phone').value.trim();
-            const date = document.getElementById('date').value;
-            const time = document.getElementById('time').value;
-            const guests = document.getElementById('guests').value;
-            const message = document.getElementById('message') ? document.getElementById('message').value.trim() : '';
+            // Get form values (scoped to form to avoid browser ID conflicts)
+            const name = reservationForm.querySelector('[name="name"]').value.trim();
+            const phone = reservationForm.querySelector('[name="phone"]').value.trim();
+            const date = reservationForm.querySelector('[name="date"]').value;
+            const time = reservationForm.querySelector('[name="time"]').value;
+            const guests = reservationForm.querySelector('[name="guests"]').value;
+            const msgEl = reservationForm.querySelector('[name="message"]');
+            const message = msgEl ? msgEl.value.trim() : '';
 
             // Validate name (at least 2 characters, only letters and spaces)
             if (name === '') {
